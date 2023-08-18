@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <STyle>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 3PX 0;
+            border: 2px solid red;
+            background-color: aqua;
+        }
+
+        .bg-primary {
+            background-color: pink;
+        }
+
+        .text-success {
+            color: blue;
+        }
+    </STyle>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOMSTD</title>
+</head>
+
+<body>
+    <h1>Welcome to NIPUNA</h1>
+    <div id="firstContainer" class="container">
+        <button id="click" onclick="clicked()">Click Me</button>
+        <p>This is a paragraph which is the best para of this universe</p>
+    </div>
+    <div class="container">
+        <p>This is a paragraph</p>
+    </div>
+</body>
+<script>
+    sel = document.querySelector('.container')
+    console.log(sel)
+    sell = document.querySelectorAll('.container')
+    console.log(sell)
+
+
+
+
+    // function clicked(){
+    //     console.log("the button was clicked ")
+    // }
+    // window.onload = function(){
+    //     console.log("window be loadted ")
+    // }
+    firstContainer.addEventListener('clicked', function () {
+        console.log("click the container")
+    })
+
+
+</script>
+
+</html>

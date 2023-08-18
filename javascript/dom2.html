@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border: 2px solid red;
+            margin: 3px 0;
+            background: cyan;
+            padding: 9px;
+        }
+        .bg-primary{
+            background-color: red;
+        }
+        .text-success{
+            color:yellow;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to this JavaScript Tutorial</h1>
+        <div id="firstContainer" class="container">
+            <button id="click" onclick="clicked()">Click Me</button>
+            <p id="text">This is a paragraph which is the best para of this universe</p>
+        </div>
+        <div class="container">
+            <p>This is a paragraph</p>
+        </div>
+</body>
+<script>
+let elem = document.getElementById("firstContainer")
+console.log(elem)
+let elemclass = document.getElementsByClassName("container")
+console.log(elemclass)
+// elemclass[0].style.background="yellow"
+elemclass[0].classList.add("bg-primary")
+elemclass[0].classList.add("text-success")
+document.getElementById("text").innerHTML = "Hello World!";
+document.getElementById('div')
+console.log(elemclass[0].innerHTML)
+console.log(elemclass[0].innerText)
+tn=document.getElementById('firstContainer')
+console.log(tn)
+tn1=document.getElementsByClassName('container')
+console.log(tn1)
+createdElement = document.createElement('p');
+createdElement.innerHTML="this is pera"
+console.log(createdElement)
+tn[0].appendChild(createdElement);
+
+</script>
+
+</html>
